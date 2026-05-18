@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ತೀವ್ರ ರಕ್ತಸ್ರಾವ - ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#8e130c",
+                      "surface-variant": "#d7e4f3",
+                      "inverse-surface": "#26323d",
+                      "tertiary-container": "#965d00",
+                      "secondary-fixed-dim": "#61de8a",
+                      "secondary": "#006d37",
+                      "on-secondary-container": "#007239",
+                      "on-surface-variant": "#59413d",
+                      "on-secondary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#b02d21",
+                      "primary-fixed": "#ffdad5",
+                      "tertiary-fixed-dim": "#ffb961",
+                      "on-primary-container": "#ffe5e1",
+                      "surface-dim": "#cfdbea",
+                      "primary-fixed-dim": "#ffb4a9",
+                      "outline": "#8d706c",
+                      "primary-container": "#c0392b",
+                      "surface-bright": "#f7f9ff",
+                      "surface-container-high": "#dde9f9",
+                      "background": "#f7f9ff",
+                      "secondary-container": "#7bf8a1",
+                      "tertiary-fixed": "#ffddb9",
+                      "inverse-primary": "#ffb4a9",
+                      "on-tertiary-container": "#ffe7cf",
+                      "inverse-on-surface": "#e7f2ff",
+                      "error": "#ba1a1a",
+                      "primary": "#9e2016",
+                      "outline-variant": "#e1bfb9",
+                      "surface-container-low": "#ecf4ff",
+                      "on-background": "#111d27",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#2b1700",
+                      "on-surface": "#111d27",
+                      "on-secondary-fixed-variant": "#005228",
+                      "tertiary": "#754800",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#d7e4f3",
+                      "surface": "#f7f9ff",
+                      "on-secondary-fixed": "#00210c",
+                      "secondary-fixed": "#7efba4",
+                      "surface-container": "#e3effe",
+                      "on-primary-fixed": "#410000",
+                      "on-tertiary-fixed-variant": "#663e00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "tap-target-min": "48px",
+                      "tile-size": "80px",
+                      "margin-mobile": "16px",
+                      "base": "8px",
+                      "gutter-mobile": "12px"
+              },
+              "fontFamily": {
+                      "label-lg": ["Roboto"],
+                      "headline-lg": ["Noto Sans Kannada"],
+                      "headline-md": ["Noto Sans Kannada"],
+                      "body-md": ["Noto Sans Kannada"],
+                      "body-lg": ["Noto Sans Kannada"],
+                      "emergency-num": ["Roboto"]
+              },
+              "fontSize": {
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                      "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                      "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                      "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .audio-pulse {
+            animation: pulse-ring 2s infinite ease-in-out;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 z-40 border-b-2 border-outline-variant flex justify-between items-center w-full px-margin-mobile h-tap-target-min">
+<div class="flex items-center gap-4">
+<button class="hover:bg-surface-container-highest p-2 rounded-full transition-transform active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<button class="hover:bg-surface-container-highest p-2 rounded-full transition-transform active:scale-95">
+<span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+</button>
+</header>
+<main class="px-margin-mobile pt-6 pb-44">
+<!-- Step Indicator and Header -->
+<div class="flex justify-between items-center mb-4">
+<h2 class="font-headline-md text-headline-md text-primary">ತೀವ್ರ ರಕ್ತಸ್ರಾವ</h2>
+<span class="font-label-lg text-label-lg bg-primary-container text-on-primary-container px-3 py-1 rounded-full">ಹಂತ 1/5</span>
+</div>
+<!-- Action Instruction -->
+<div class="mb-6">
+<h3 class="font-headline-lg text-headline-lg mb-2">ಒತ್ತಡವನ್ನು ಹಾಕಿ (Apply pressure)</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">ಗಾಯದ ಮೇಲೆ ನೇರವಾಗಿ ಬಲವಾದ ಒತ್ತಡವನ್ನು ಹಾಕುವ ಮೂಲಕ ರಕ್ತಸ್ರಾವವನ್ನು ನಿಲ್ಲಿಸಿ.</p>
+</div>
+<!-- Illustration Card -->
+<div class="mb-8 rounded-xl overflow-hidden border-2 border-primary-container bg-white">
+<img alt="ಒತ್ತಡ ಹಾಕುವ ವಿಧಾನ" class="w-full h-64 object-cover" data-alt="A clean and medical-style instructional illustration showing a pair of hands wearing surgical gloves applying firm, direct pressure to a wound on an arm using a thick, white sterile cloth. The background is a clean clinical white, and the visual style is minimalist with high-contrast outlines, following a safety-first aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbq2TwUB_zooi7-3neDyAZeWJWB2hd1nN7fyHXIGY1fh14fBQvELZHg2JJgonU76_MbcDHCjOuLZqPQxosV14jOoSFD-PD7wuUxkbl3U_w36qfZNYMak9rPmg0LSGvjkSh5mMemcm8lmqPOHtVaWmWq09e7Na_NlvbYwZOMe8gAkIQqAkBOwwCY6A5ggSzhcF2Vv-q5KdnIQlUb01ADVT-Ey3TFvWN0MSgu9e06bS1uXOOzH5sL0YUSMw-aywMD5vi9Z6aQVrqOhft"/>
+</div>
+<!-- DOs & DON'Ts Grid -->
+<div class="grid grid-cols-1 gap-4 mb-8">
+<!-- DOs -->
+<div class="bg-secondary-container rounded-xl p-4 border-2 border-secondary">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-lg text-label-lg text-on-secondary-container font-bold text-lg">ಮಾಡಿ (DOs)</span>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-secondary-container flex-shrink-0" data-icon="pan_tool">pan_tool</span>
+<div>
+<p class="font-body-md text-on-secondary-container font-bold">ಸ್ವಚ್ಛವಾದ ಬಟ್ಟೆಯಿಂದ ನಿರಂತರವಾಗಿ ಗಟ್ಟಿಯಾಗಿ ಒತ್ತಿರಿ.</p>
+<p class="text-xs text-on-secondary-container opacity-80 italic">Apply firm, direct pressure with a clean cloth continuously</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-secondary-container flex-shrink-0" data-icon="vertical_align_top">vertical_align_top</span>
+<div>
+<p class="font-body-md text-on-secondary-container font-bold">ರಕ್ತಸ್ರಾವವಾಗುತ್ತಿರುವ ಭಾಗವನ್ನು ಹೃದಯದ ಮಟ್ಟಕ್ಕಿಂತ ಎತ್ತರಕ್ಕೆ ಇರಿಸಿ.</p>
+<p class="text-xs text-on-secondary-container opacity-80 italic">Elevate the bleeding limb above heart level</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-secondary-container flex-shrink-0" data-icon="layers">layers</span>
+<div>
+<p class="font-body-md text-on-secondary-container font-bold">ರಕ್ತವು ಬಟ್ಟೆಯನ್ನು ಮೀರಿ ಬಂದರೆ, ಅದರ ಮೇಲೆ ಮತ್ತೊಂದು ಬಟ್ಟೆಯನ್ನು ಇಡಿ - ಮೊದಲ ಪದರವನ್ನು ತೆಗೆಯಬೇಡಿ.</p>
+<p class="text-xs text-on-secondary-container opacity-80 italic">Add more cloth on top if blood soaks through — don't remove the first layer</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-secondary-container flex-shrink-0" data-icon="emergency">emergency</span>
+<div>
+<p class="font-body-md text-on-secondary-container font-bold">ನಿಯಂತ್ರಿಸಲಾಗದ ಅಥವಾ ತೀವ್ರ ರಕ್ತಸ್ರಾವವಿದ್ದರೆ 108 ಗೆ ಕರೆ ಮಾಡಿ.</p>
+<p class="text-xs text-on-secondary-container opacity-80 italic">Call 108 for uncontrolled or arterial bleeding</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- DON'Ts -->
+<div class="bg-error-container rounded-xl p-4 border-2 border-error">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-on-error-container" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<span class="font-label-lg text-label-lg text-on-error-container font-bold text-lg">ಮಾಡಬೇಡಿ (DON'Ts)</span>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-error-container flex-shrink-0" data-icon="visibility_off">visibility_off</span>
+<div>
+<p class="font-body-md text-on-error-container font-bold">ಪರಿಶೀಲಿಸಲು ಬಟ್ಟೆಯನ್ನು ತೆಗೆಯಬೇಡಿ - ಇದು ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆಗೆ ಅಡ್ಡಿಪಡಿಸುತ್ತದೆ.</p>
+<p class="text-xs text-on-error-container opacity-80 italic">Don't remove the cloth to check — it disrupts clotting</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-error-container flex-shrink-0" data-icon="healing">healing</span>
+<div>
+<p class="font-body-md text-on-error-container font-bold">ತರಬೇತಿ ಇಲ್ಲದಿದ್ದರೆ ಮತ್ತು ರಕ್ತಸ್ರಾವವು ಜೀವಕ್ಕೆ ಅಪಾಯಕಾರಿಯಲ್ಲದಿದ್ದರೆ ಟೂರ್ನಿಕೆಟ್ ಬಳಸಬೇಡಿ.</p>
+<p class="text-xs text-on-error-container opacity-80 italic">Don't apply a tourniquet unless trained and bleeding is life-threatening</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-error-container flex-shrink-0" data-icon="block">block</span>
+<div>
+<p class="font-body-md text-on-error-container font-bold">ಅಶುದ್ಧ ಬಟ್ಟೆ ಅಥವಾ ಹತ್ತಿಯನ್ನು ಬಳಸಬೇಡಿ.</p>
+<p class="text-xs text-on-error-container opacity-80 italic">Don't use dirty cloth or cotton wool</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-on-error-container flex-shrink-0" data-icon="person_off">person_off</span>
+<div>
+<p class="font-body-md text-on-error-container font-bold">ರೋಗಿಯನ್ನು ಏಕಾಂಗಿಯಾಗಿ ಬಿಡಬೇಡಿ.</p>
+<p class="text-xs text-on-error-container opacity-80 italic">Don't leave the patient unattended</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Next Action Button -->
+<button class="w-full h-tap-target-min bg-primary text-on-primary font-headline-md text-headline-md rounded-xl shadow-md active:scale-95 transition-transform flex justify-center items-center gap-2 mb-10">
+            ಮುಂದಿನ ಹಂತ
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</main>
+<!-- Audio FAB -->
+<button class="fixed right-margin-mobile bottom-36 w-14 h-14 bg-secondary-fixed rounded-full shadow-lg flex items-center justify-center audio-pulse border-2 border-white z-50 transition-transform active:scale-90">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl" data-icon="record_voice_over" style="font-variation-settings: 'FILL' 1;">record_voice_over</span>
+</button>
+<!-- Persistent Call 108 Bar -->
+<div class="fixed bottom-20 left-0 w-full z-50 bg-primary-container h-16 flex items-center justify-center shadow-2xl active:opacity-90 transition-opacity cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-emergency-num text-emergency-num text-white">CALL 108</span>
+</div>
+</div>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-base pb-safe bg-surface border-t-2 border-outline-variant">
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-lg text-label-lg">ಮನೆ</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 active:scale-90 transition-all duration-100 ease-in-out">
+<span class="material-symbols-outlined" data-icon="medical_services" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+<span class="font-label-lg text-label-lg">ಆಸ್ಪತ್ರೆಗಳು</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-lg text-label-lg">ಸೆಟ್ಟಿಂಗ್ಸ್</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant px-4 py-1 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="emergency">emergency</span>
+<span class="font-label-lg text-label-lg">ಕರೆ 108</span>
+</div>
+</nav>
+</body></html>

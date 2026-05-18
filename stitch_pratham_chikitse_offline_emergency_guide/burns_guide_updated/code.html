@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ - ಸುಟ್ಟ ಗಾಯ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#8e130c",
+                        "surface-variant": "#d7e4f3",
+                        "inverse-surface": "#26323d",
+                        "tertiary-container": "#965d00",
+                        "secondary-fixed-dim": "#61de8a",
+                        "secondary": "#006d37",
+                        "on-secondary-container": "#007239",
+                        "on-surface-variant": "#59413d",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#b02d21",
+                        "primary-fixed": "#ffdad5",
+                        "tertiary-fixed-dim": "#ffb961",
+                        "on-primary-container": "#ffe5e1",
+                        "surface-dim": "#cfdbea",
+                        "primary-fixed-dim": "#ffb4a9",
+                        "outline": "#8d706c",
+                        "primary-container": "#c0392b",
+                        "surface-bright": "#f7f9ff",
+                        "surface-container-high": "#dde9f9",
+                        "background": "#f7f9ff",
+                        "secondary-container": "#7bf8a1",
+                        "tertiary-fixed": "#ffddb9",
+                        "inverse-primary": "#ffb4a9",
+                        "on-tertiary-container": "#ffe7cf",
+                        "inverse-on-surface": "#e7f2ff",
+                        "error": "#ba1a1a",
+                        "primary": "#9e2016",
+                        "outline-variant": "#e1bfb9",
+                        "surface-container-low": "#ecf4ff",
+                        "on-background": "#111d27",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-surface": "#111d27",
+                        "on-secondary-fixed-variant": "#005228",
+                        "tertiary": "#754800",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d7e4f3",
+                        "surface": "#f7f9ff",
+                        "on-secondary-fixed": "#00210c",
+                        "secondary-fixed": "#7efba4",
+                        "surface-container": "#e3effe",
+                        "on-primary-fixed": "#410000",
+                        "on-tertiary-fixed-variant": "#663e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "tap-target-min": "48px",
+                        "tile-size": "80px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Roboto"],
+                        "headline-lg": ["Noto Sans Kannada"],
+                        "headline-md": ["Noto Sans Kannada"],
+                        "body-md": ["Noto Sans Kannada"],
+                        "body-lg": ["Noto Sans Kannada"],
+                        "emergency-num": ["Roboto"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                        "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(0, 109, 55, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 109, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 109, 55, 0); }
+        }
+        .animate-pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-high docked full-width top-0 border-b-2 border-outline-variant dark:border-outline flex justify-between items-center w-full px-margin-mobile h-tap-target-min z-50 sticky">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed hover:bg-surface-container-highest p-2 rounded-full transition-transform active:scale-95">
+                arrow_back
+            </button>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<button class="material-symbols-outlined text-primary dark:text-primary-fixed hover:bg-surface-container-highest p-2 rounded-full transition-transform active:scale-95">
+            account_circle
+        </button>
+</header>
+<main class="flex-grow px-margin-mobile pt-6 pb-32">
+<!-- Step Progress Header -->
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">ಸುಟ್ಟ ಗಾಯ (Burns)</h2>
+<span class="font-label-lg text-label-lg bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full border border-outline-variant">ಹಂತ 1/5</span>
+</div>
+<!-- Hero Illustration Card -->
+<div class="bg-surface-container-lowest border-2 border-outline-variant rounded-xl overflow-hidden mb-8 shadow-sm">
+<div class="aspect-video w-full bg-surface-container relative">
+<img alt="Cooling a burn under water" class="w-full h-full object-cover" data-alt="A clean, medical-style digital illustration showing a human forearm with a red burn mark being held under a gentle stream of cool running water from a modern chrome tap. The background is a clinical, bright white tile setting with soft blue shadows. The artistic style is minimalist with bold outlines and clear instructional clarity, using a primary palette of soothing blues, clinical whites, and a focused red for the injury site to guide immediate action." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB54dSOlJW-DaRBfLk8KZ9rBXKSXg13pd9ZoRzS9E66m6c6NfXH68qs4ljR7J-OYlUZ6ExxgMqKwMER7Q0gTTsWivYRIo_n6NoogyGgI9N1_tTLppv3uYlvBXhQ1OhQf7JF2GtvLEwTs5sK0m2tk7BAr-I9B2VBWp3TlmT-0h1WIdXI0lAMf2W0gZ80aScrOVd4_MuDc7GkJhFfe6qXjC4UvalXjDzl2v4sFKtrkG84NHi3LoLxae9B-g4YiNmyJ6-sZ2PK1Hgut4lV"/>
+<div class="absolute bottom-4 left-4 bg-primary text-on-primary px-4 py-2 rounded-lg font-headline-md shadow-lg">
+                    ತಣ್ಣಗೆ ಮಾಡಿ
+                </div>
+</div>
+<div class="p-6">
+<p class="font-body-lg text-body-lg text-on-surface mb-4">
+                    ಸುಟ್ಟ ಭಾಗವನ್ನು ಕೂಡಲೇ ಹರಿಯುವ ತಣ್ಣನೆಯ ನೀರಿನ ಅಡಿಯಲ್ಲಿ ಹಿಡಿಯಿರಿ.
+                </p>
+<div class="flex items-center gap-2 text-secondary font-bold">
+<span class="material-symbols-outlined">timer</span>
+<span class="font-label-lg text-label-lg uppercase">ಕನಿಷ್ಠ 10-20 ನಿಮಿಷಗಳು</span>
+</div>
+</div>
+</div>
+<!-- DOs and DON'Ts Layout -->
+<div class="flex flex-col gap-6">
+<!-- DOs -->
+<div class="bg-secondary-container rounded-xl p-5 border-2 border-secondary shadow-sm">
+<div class="flex items-center gap-2 mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined font-bold" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<h3 class="font-headline-md text-headline-md">ಮಾಡಬೇಕಾದದ್ದು (DOs)</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">done</span>
+<div>
+<p class="font-body-md text-on-secondary-container">ಕನಿಷ್ಠ 10-20 ನಿಮಿಷಗಳ ಕಾಲ ಹರಿಯುವ ತಣ್ಣನೆಯ ನೀರಿನಲ್ಲಿ ತಣಿಸಿ.</p>
+<p class="text-sm opacity-80 italic">Cool the burn with running cool water for at least 10–20 minutes.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">done</span>
+<div>
+<p class="font-body-md text-on-secondary-container">ಸುಟ್ಟ ಗಾಯದ ಹತ್ತಿರವಿರುವ ಆಭರಣ ಅಥವಾ ಬಟ್ಟೆಗಳನ್ನು ತೆಗೆಯಿರಿ (ಚರ್ಮಕ್ಕೆ ಅಂಟಿಕೊಳ್ಳದಿದ್ದರೆ ಮಾತ್ರ).</p>
+<p class="text-sm opacity-80 italic">Remove jewellery/clothing near the burn (if not stuck to skin).</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">done</span>
+<div>
+<p class="font-body-md text-on-secondary-container">ಸ್ವಚ್ಛವಾದ ಬಟ್ಟೆ ಅಥವಾ ಕ್ಲಿಂಗ್ ಫಿಲ್ಮ್‌ನಿಂದ ಸಡಿಲವಾಗಿ ಮುಚ್ಚಿ.</p>
+<p class="text-sm opacity-80 italic">Cover loosely with a clean, non-fluffy cloth or cling film.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary mt-1">done</span>
+<div>
+<p class="font-body-md text-on-secondary-container font-bold">ಗಾಯವು ಅಂಗೈಗಿಂತ ದೊಡ್ಡದಾಗಿದ್ದರೆ ಅಥವಾ ಮುಖ/ಕೈ/ಜನನಾಂಗದ ಮೇಲಿದ್ದರೆ 108ಕ್ಕೆ ಕರೆ ಮಾಡಿ.</p>
+<p class="text-sm opacity-80 italic">Call 108 for burns larger than the patient's palm, or on face/hands/groin.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- DON'Ts -->
+<div class="bg-error-container rounded-xl p-5 border-2 border-error shadow-sm">
+<div class="flex items-center gap-2 mb-4 text-on-error-container">
+<span class="material-symbols-outlined font-bold" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<h3 class="font-headline-md text-headline-md">ಮಾಡಬಾರದ್ದು (DON'Ts)</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error mt-1">close</span>
+<div>
+<p class="font-body-md text-on-error-container">ಮಂಜುಗಡ್ಡೆ, ಬೆಣ್ಣೆ, ಟೂತ್‌ಪೇಸ್ಟ್ ಅಥವಾ ಎಣ್ಣೆಯನ್ನು ಹಚ್ಚಬೇಡಿ.</p>
+<p class="text-sm opacity-80 italic">Don't apply ice, butter, toothpaste, or oil.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error mt-1">close</span>
+<div>
+<p class="font-body-md text-on-error-container">ಎದ್ದಿರುವ ಗುಳ್ಳೆಗಳನ್ನು ಒಡೆಯಬೇಡಿ.</p>
+<p class="text-sm opacity-80 italic">Don't burst blisters.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error mt-1">close</span>
+<div>
+<p class="font-body-md text-on-error-container">ಸುಟ್ಟ ಗಾಯಕ್ಕೆ ಅಂಟಿಕೊಂಡಿರುವ ಬಟ್ಟೆಯನ್ನು ತೆಗೆಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.</p>
+<p class="text-sm opacity-80 italic">Don't remove clothing stuck to the burn.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-error mt-1">close</span>
+<div>
+<p class="font-body-md text-on-error-container">ಗಾಯದ ಮೇಲೆ ನೇರವಾಗಿ ಹತ್ತಿಯನ್ನು ಬಳಸಬೇಡಿ.</p>
+<p class="text-sm opacity-80 italic">Don't use cotton wool directly on the wound.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Action Button -->
+<div class="mt-8 mb-12">
+<button class="w-full bg-primary text-on-primary h-[56px] rounded-xl font-headline-md flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-md">
+                ಮುಂದಿನ ಹಂತ
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Pulsing Audio FAB -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-lg animate-pulse-glow z-40 active:scale-90 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+<!-- Persistent Call 108 Bar -->
+<footer class="fixed bottom-0 left-0 w-full z-50">
+<a class="bg-primary-container h-20 w-full flex items-center justify-center gap-4 text-on-primary-container active:bg-primary transition-colors" href="tel:108">
+<span class="material-symbols-outlined text-[40px]" style="font-variation-settings: 'FILL' 1;">emergency_share</span>
+<div class="flex flex-col">
+<span class="font-emergency-num text-emergency-num leading-none">CALL 108</span>
+<span class="font-label-lg text-label-lg opacity-90 text-center">ತುರ್ತು ಕರೆ ಮಾಡಿ</span>
+</div>
+</a>
+</footer>
+</body></html>

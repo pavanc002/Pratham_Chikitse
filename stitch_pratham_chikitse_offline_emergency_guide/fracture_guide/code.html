@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>First Aid Karnataka - Fracture Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .pulse-secondary {
+            box-shadow: 0 0 0 0 rgba(0, 109, 55, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 109, 55, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 109, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 109, 55, 0); }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#ffb961",
+                      "on-primary-fixed": "#410000",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#e7f2ff",
+                      "secondary-fixed-dim": "#61de8a",
+                      "error-container": "#ffdad6",
+                      "primary-fixed-dim": "#ffb4a9",
+                      "surface": "#f7f9ff",
+                      "outline": "#8d706c",
+                      "on-tertiary-fixed": "#2b1700",
+                      "on-surface-variant": "#59413d",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#754800",
+                      "surface-container-high": "#dde9f9",
+                      "tertiary-fixed": "#ffddb9",
+                      "surface-container-low": "#ecf4ff",
+                      "on-primary-container": "#ffe5e1",
+                      "primary-container": "#c0392b",
+                      "surface-dim": "#cfdbea",
+                      "surface-container-highest": "#d7e4f3",
+                      "on-surface": "#111d27",
+                      "surface-bright": "#f7f9ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#b02d21",
+                      "on-secondary-container": "#007239",
+                      "background": "#f7f9ff",
+                      "on-primary-fixed-variant": "#8e130c",
+                      "secondary-fixed": "#7efba4",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#005228",
+                      "on-error-container": "#93000a",
+                      "primary": "#9e2016",
+                      "inverse-primary": "#ffb4a9",
+                      "secondary-container": "#7bf8a1",
+                      "on-secondary-fixed": "#00210c",
+                      "on-tertiary-fixed-variant": "#663e00",
+                      "primary-fixed": "#ffdad5",
+                      "surface-container": "#e3effe",
+                      "outline-variant": "#e1bfb9",
+                      "on-primary": "#ffffff",
+                      "on-background": "#111d27",
+                      "on-tertiary-container": "#ffe7cf",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#965d00",
+                      "inverse-surface": "#26323d",
+                      "secondary": "#006d37",
+                      "surface-variant": "#d7e4f3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "tap-target-min": "48px",
+                      "base": "8px",
+                      "tile-size": "80px",
+                      "gutter-mobile": "12px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Noto Sans Kannada"],
+                      "body-lg": ["Noto Sans Kannada"],
+                      "body-md": ["Noto Sans Kannada"],
+                      "label-lg": ["Roboto"],
+                      "emergency-num": ["Roboto"],
+                      "headline-lg": ["Noto Sans Kannada"]
+              },
+              "fontSize": {
+                      "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                      "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}],
+                      "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body-md text-on-background min-h-screen flex flex-col pb-24">
+<!-- Top App Bar -->
+<header class="flex items-center justify-between px-margin-mobile h-tap-target-min w-full bg-surface border-b-2 border-outline-variant fixed top-0 z-40">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-[24px] cursor-pointer active:scale-95 transition-transform" data-icon="menu">menu</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant p-2" data-icon="language">language</span>
+</div>
+</header>
+<!-- Content Canvas -->
+<main class="mt-tap-target-min px-margin-mobile py-base flex-1 overflow-y-auto">
+<!-- Header Section -->
+<section class="mt-6 mb-8">
+<div class="flex justify-between items-start mb-2">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-lg font-label-lg">Step 1/5</span>
+<span class="text-on-surface-variant font-label-lg text-label-lg">Emergency Guide</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Fracture / Broken Bone</h2>
+<h3 class="font-headline-md text-headline-md text-on-surface-variant">ಮೂಳೆ ಮುರಿತ</h3>
+</section>
+<!-- Visual Aid -->
+<div class="mb-8 rounded-xl overflow-hidden border-2 border-outline-variant shadow-sm aspect-video relative">
+<img class="w-full h-full object-cover" data-alt="A clean, high-contrast medical illustration showing a first aid responder carefully placing a splint made of a rigid board and soft cloth against a person's injured forearm. The lighting is bright and professional, following a modern medical app aesthetic. The background is a calm, neutral light grey, emphasizing the instructional clarity and safety-first approach with primary red and deep navy accents in the UI elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtK8jfPx3jdk3IOJjK62IXstFnsxJkrwV_eQk0dEFOtyKe5qxZAkB8eWz6qnNOb_6i-H7NAfX0TKd2KKkGzpB9tx3-Lfrvoti-J2y2TWsVOxyA2xfGWfVFJ0K_1pAsh2QCLZGfXVPr7eI7e-7u_RSu8gpc9uZodkf76yzDrC2_Nnf4xpON8BVCnZdq50snkAPTeonJCs_n3vC56WxJdr11yvRo9Cq201JDHbVCctSGaskw_9cP6-mXgxm6_5AaVWAL8p4EuP0nxlVj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-4">
+<p class="text-white font-body-lg text-body-lg">Immobilise the injury immediately.</p>
+</div>
+</div>
+<!-- DOs Section (Green Theme) -->
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<h4 class="font-headline-md text-headline-md">ಮಾಡಬೇಕಾದವುಗಳು (DOs)</h4>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="bg-secondary-container/20 border-l-4 border-secondary p-4 rounded-r-xl flex gap-4 items-start active:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="healing">healing</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-secondary-container">Immobilise the injured area</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Use a splint like a stick or rolled newspaper.</p>
+</div>
+</div>
+<div class="bg-secondary-container/20 border-l-4 border-secondary p-4 rounded-r-xl flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary" data-icon="support">support</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-secondary-container">Support the limb as found</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Do not try to straighten the limb.</p>
+</div>
+</div>
+<div class="bg-secondary-container/20 border-l-4 border-secondary p-4 rounded-r-xl flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary" data-icon="ac_unit">ac_unit</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-secondary-container">Apply cold pack</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Wrap in cloth to reduce swelling.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- DON'Ts Section (Red Theme) -->
+<div class="space-y-4 mb-12">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" data-icon="cancel" style="font-variation-settings: 'FILL' 1;">cancel</span>
+<h4 class="font-headline-md text-headline-md">ಮಾಡಬಾರದು (DON'Ts)</h4>
+</div>
+<div class="bg-error-container/30 border-2 border-dashed border-error p-4 rounded-xl space-y-4">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-error" data-icon="block">block</span>
+<p class="font-body-md text-body-md text-on-surface">Don't try to realign or push bones back into place.</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-error" data-icon="person_off">person_off</span>
+<p class="font-body-md text-body-md text-on-surface">Don't move a person with suspected spine or neck injury.</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-error" data-icon="no_drinks">no_drinks</span>
+<p class="font-body-md text-body-md text-on-surface">Don't give food/water if surgery may be needed.</p>
+</div>
+</div>
+</div>
+<!-- Instruction Control -->
+<button class="w-full h-tap-target-min bg-primary text-on-primary font-headline-md text-headline-md rounded-xl flex items-center justify-center gap-2 active:scale-[0.98] transition-all shadow-md mb-20">
+            Next Step
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</main>
+<!-- Pulsing Audio FAB -->
+<div class="fixed bottom-24 right-6 z-50">
+<button class="w-[64px] h-[64px] rounded-full bg-secondary text-on-secondary flex items-center justify-center pulse-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[32px]" data-icon="volume_up" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+</div>
+<!-- Call 108 Bar -->
+<div class="fixed bottom-[72px] left-0 w-full bg-[#C0392B] h-[64px] flex items-center justify-center gap-4 z-40 active:bg-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-white text-[36px]" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="text-white font-emergency-num text-emergency-num tracking-wider">CALL 108</span>
+</div>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-surface-container dark:bg-surface-container-highest border-t-4 border-primary shadow-lg z-50 rounded-t-xl">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all active:bg-primary-container">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-lg text-label-lg">ಮುಖಪುಟ</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all active:bg-primary-container">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-label-lg text-label-lg">ಆಸ್ಪತ್ರೆಗಳು</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-lg p-2 transition-all">
+<span class="material-symbols-outlined" data-icon="emergency">emergency</span>
+<span class="font-label-lg text-label-lg">ಸಹಾಯ</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all active:bg-primary-container">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-lg text-label-lg">ಸೆಟ್ಟಿಂಗ್ಸ್</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .pulse-secondary {
+            box-shadow: 0 0 0 0 rgba(97, 222, 138, 0.7);
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(97, 222, 138, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(97, 222, 138, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(97, 222, 138, 0); }
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb961",
+                        "on-primary-fixed": "#410000",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#e7f2ff",
+                        "secondary-fixed-dim": "#61de8a",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb4a9",
+                        "surface": "#f7f9ff",
+                        "outline": "#8d706c",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-surface-variant": "#59413d",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#754800",
+                        "surface-container-high": "#dde9f9",
+                        "tertiary-fixed": "#ffddb9",
+                        "surface-container-low": "#ecf4ff",
+                        "on-primary-container": "#ffe5e1",
+                        "primary-container": "#c0392b",
+                        "surface-dim": "#cfdbea",
+                        "surface-container-highest": "#d7e4f3",
+                        "on-surface": "#111d27",
+                        "surface-bright": "#f7f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#b02d21",
+                        "on-secondary-container": "#007239",
+                        "background": "#f7f9ff",
+                        "on-primary-fixed-variant": "#8e130c",
+                        "secondary-fixed": "#7efba4",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005228",
+                        "on-error-container": "#93000a",
+                        "primary": "#9e2016",
+                        "inverse-primary": "#ffb4a9",
+                        "secondary-container": "#7bf8a1",
+                        "on-secondary-fixed": "#00210c",
+                        "on-tertiary-fixed-variant": "#663e00",
+                        "primary-fixed": "#ffdad5",
+                        "surface-container": "#e3effe",
+                        "outline-variant": "#e1bfb9",
+                        "on-primary": "#ffffff",
+                        "on-background": "#111d27",
+                        "on-tertiary-container": "#ffe7cf",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#965d00",
+                        "inverse-surface": "#26323d",
+                        "secondary": "#006d37",
+                        "surface-variant": "#d7e4f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "tap-target-min": "48px",
+                        "base": "8px",
+                        "tile-size": "80px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Sans Kannada"],
+                        "body-lg": ["Noto Sans Kannada"],
+                        "body-md": ["Noto Sans Kannada"],
+                        "label-lg": ["Roboto"],
+                        "emergency-num": ["Roboto"],
+                        "headline-lg": ["Noto Sans Kannada"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                        "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="bg-surface dark:bg-surface-dim border-b-2 border-outline-variant sticky top-0 z-50 flex items-center justify-between px-margin-mobile h-tap-target-min w-full">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform p-2">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<button class="material-symbols-outlined text-primary p-2">info</button>
+</header>
+<main class="px-margin-mobile pt-6 space-y-6">
+<!-- Instruction Header -->
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">ಶಾಖ ಆಘಾತ</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Heat Stroke</p>
+</div>
+<div class="bg-primary-container text-on-primary-container font-label-lg text-label-lg px-4 py-1 rounded-full">
+                Step 1/5
+            </div>
+</div>
+<!-- Hero Action Illustration -->
+<div class="relative w-full aspect-video bg-surface-container-high rounded-xl overflow-hidden border-2 border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A detailed clinical illustration of a person suffering from heat stroke being moved to a cool, shaded area. The scene is bright and high-contrast, reflecting a medical emergency app's clean aesthetic. A caregiver is placing a wet cloth on the person's forehead under the shade of a large green tree. The lighting is bright and clear, emphasizing the urgent yet calm atmosphere of professional first aid. The color palette uses cooling blues and greens against the emergency red accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWkVot4K0el623P9FLQy3UdD15vv8ekqSTJODtmVH-EonwiTBP46XumTvLjgYFUVsYmrfsmPvXHBnuPzkRT-FznSCjom-aD6dAONyT9zgarPC1WqjNBxYtk-k4c1sR_FIA73LcX9nqd69ASmRj4tRpWRzKI4aYkUvkKcDDlDfJWdD8QE8zVvYnGp_GEAQr_u2KMnqFL6G8106_MnqXE-0jEc4Ccob_Z8XVIKAKNOh5b1Tg8jAYHUUCUzK86xkNzGGmR069nfq5nmYN"/>
+<div class="absolute bottom-4 left-4 bg-error text-on-error px-3 py-1 rounded-lg font-label-lg text-label-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">warning</span> URGENT
+            </div>
+</div>
+<!-- Instruction Card: DOs -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary font-bold">check_circle</span>
+<h3 class="font-headline-md text-headline-md text-secondary">ಮಾಡಿ (DOs)</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest border-2 border-secondary-container rounded-xl">
+<span class="material-symbols-outlined text-secondary bg-secondary-container p-2 rounded-lg">wb_sunny</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">ತಕ್ಷಣ ನೆರಳು ಅಥವಾ ತಂಪಾದ ಜಾಗಕ್ಕೆ ಕರೆದೊಯ್ಯಿರಿ</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Move person to shade immediately</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest border-2 border-secondary-container rounded-xl">
+<span class="material-symbols-outlined text-secondary bg-secondary-container p-2 rounded-lg">dry_cleaning</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">ಹೆಚ್ಚುವರಿ ಬಟ್ಟೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Remove excess clothing</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest border-2 border-secondary-container rounded-xl">
+<span class="material-symbols-outlined text-secondary bg-secondary-container p-2 rounded-lg">ac_unit</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">ಕುತ್ತಿಗೆ, ಬಗಲುಗಳಿಗೆ ಒದ್ದೆ ಬಟ್ಟೆ ಇಡಿ</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Cool rapidly with wet cloths</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Instruction Card: DON'Ts -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error font-bold">cancel</span>
+<h3 class="font-headline-md text-headline-md text-error">ಮಾಡಬೇಡಿ (DON'Ts)</h3>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest border-2 border-error-container rounded-xl">
+<span class="material-symbols-outlined text-error bg-error-container p-2 rounded-lg">icecream</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">ತುಂಬಾ ತಣ್ಣನೆಯ ಅಥವಾ ಐಸ್ ನೀರು ಕೊಡಬೇಡಿ</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Don't give very cold or iced water</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-surface-container-lowest border-2 border-error-container rounded-xl">
+<span class="material-symbols-outlined text-error bg-error-container p-2 rounded-lg">no_food</span>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface">ಆಹಾರ ಅಥವಾ ಟೀ-ಕಾಫಿ ನೀಡಬೇಡಿ</p>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Don't give food, tea, or coffee</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Action Button -->
+<button class="w-full h-tap-target-min bg-primary text-on-primary rounded-xl font-headline-md text-headline-md flex items-center justify-center gap-2 active:scale-95 transition-all shadow-lg mb-8">
+            ಮುಂದಿನ ಹಂತ (Next Step)
+            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</main>
+<!-- Pulsing Audio FAB -->
+<button class="fixed right-6 bottom-24 w-14 h-14 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-xl z-40 pulse-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+<!-- Persistent Call 108 Bar -->
+<div class="fixed bottom-0 left-0 w-full z-50">
+<div class="bg-surface-container-highest flex justify-around items-center px-4 py-2 border-t-4 border-primary">
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-lg text-label-lg">ಮುಖಪುಟ</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="font-label-lg text-label-lg">ಆಸ್ಪತ್ರೆಗಳು</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-lg text-label-lg">ಸೆಟ್ಟಿಂಗ್ಸ್</span>
+</button>
+</div>
+<a class="w-full bg-primary-container h-16 flex items-center justify-center gap-4 active:bg-primary transition-colors" href="tel:108">
+<span class="material-symbols-outlined text-on-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="text-on-primary font-emergency-num text-emergency-num">CALL 108</span>
+</a>
+</div>
+</body></html>

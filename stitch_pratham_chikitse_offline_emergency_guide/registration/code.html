@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Registration - ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#8e130c",
+                    "surface-variant": "#d7e4f3",
+                    "inverse-surface": "#26323d",
+                    "tertiary-container": "#965d00",
+                    "secondary-fixed-dim": "#61de8a",
+                    "secondary": "#006d37",
+                    "on-secondary-container": "#007239",
+                    "on-surface-variant": "#59413d",
+                    "on-secondary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#b02d21",
+                    "primary-fixed": "#ffdad5",
+                    "tertiary-fixed-dim": "#ffb961",
+                    "on-primary-container": "#ffe5e1",
+                    "surface-dim": "#cfdbea",
+                    "primary-fixed-dim": "#ffb4a9",
+                    "outline": "#8d706c",
+                    "primary-container": "#c0392b",
+                    "surface-bright": "#f7f9ff",
+                    "surface-container-high": "#dde9f9",
+                    "background": "#f7f9ff",
+                    "secondary-container": "#7bf8a1",
+                    "tertiary-fixed": "#ffddb9",
+                    "inverse-primary": "#ffb4a9",
+                    "on-tertiary-container": "#ffe7cf",
+                    "inverse-on-surface": "#e7f2ff",
+                    "error": "#ba1a1a",
+                    "primary": "#9e2016",
+                    "outline-variant": "#e1bfb9",
+                    "surface-container-low": "#ecf4ff",
+                    "on-background": "#111d27",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#2b1700",
+                    "on-surface": "#111d27",
+                    "on-secondary-fixed-variant": "#005228",
+                    "tertiary": "#754800",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d7e4f3",
+                    "surface": "#f7f9ff",
+                    "on-secondary-fixed": "#00210c",
+                    "secondary-fixed": "#7efba4",
+                    "surface-container": "#e3effe",
+                    "on-primary-fixed": "#410000",
+                    "on-tertiary-fixed-variant": "#663e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "tap-target-min": "48px",
+                    "tile-size": "80px",
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter-mobile": "12px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Roboto"],
+                    "headline-lg": ["Noto Sans Kannada"],
+                    "headline-md": ["Noto Sans Kannada"],
+                    "body-md": ["Noto Sans Kannada"],
+                    "body-lg": ["Noto Sans Kannada"],
+                    "emergency-num": ["Roboto"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                    "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                    "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9ff;
+            font-family: 'Noto Sans Kannada', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Top App Bar - Simplified for Onboarding -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-tap-target-min bg-surface border-b-2 border-outline-variant">
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-highest rounded-full transition-colors">
+            help_outline
+        </button>
+</header>
+<main class="flex-grow flex flex-col px-margin-mobile pt-8 pb-12 max-w-md mx-auto w-full">
+<!-- Hero Section / Context -->
+<div class="mb-10 text-center">
+<div class="w-24 h-24 bg-primary-container rounded-full mx-auto flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-5xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">ನೋಂದಾಯಿಸಿ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">ತುರ್ತು ಸಂದರ್ಭದಲ್ಲಿ ಉತ್ತಮ ಚಿಕಿತ್ಸೆ ಪಡೆಯಲು ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ನೀಡಿ.</p>
+</div>
+<!-- Registration Form -->
+<div class="space-y-6">
+<!-- Name Field -->
+<div class="relative group">
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-2 ml-1" for="name">ಪೂರ್ಣ ಹೆಸರು (Full Name)</label>
+<div class="flex items-center border-2 border-outline rounded-xl px-4 py-3 bg-surface focus-within:border-primary transition-all">
+<span class="material-symbols-outlined text-outline group-focus-within:text-primary mr-3">person</span>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-lg text-body-lg placeholder:text-outline-variant" id="name" name="name" placeholder="ನಿಮ್ಮ ಹೆಸರನ್ನು ನಮೂದಿಸಿ" type="text"/>
+</div>
+</div>
+<!-- Phone Number Field -->
+<div class="relative group">
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-2 ml-1" for="phone">ಫೋನ್ ಸಂಖ್ಯೆ (Phone Number)</label>
+<div class="flex items-center border-2 border-outline rounded-xl px-4 py-3 bg-surface focus-within:border-primary transition-all">
+<span class="material-symbols-outlined text-outline group-focus-within:text-primary mr-3">call</span>
+<div class="flex items-center border-r border-outline-variant pr-3 mr-3">
+<span class="font-emergency-num text-label-lg text-on-surface">+91</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-emergency-num text-body-lg placeholder:text-outline-variant" id="phone" name="phone" placeholder="10 ಅಂಕಿಗಳ ಸಂಖ್ಯೆ" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Action Buttons - The Panic Zone -->
+<div class="mt-auto pt-10 space-y-4">
+<button class="w-full h-14 bg-primary text-on-primary rounded-xl font-headline-md text-headline-md flex items-center justify-center active:scale-95 transition-transform shadow-md">
+<span>ನೋಂದಾಯಿಸಿ (Register)</span>
+<span class="material-symbols-outlined ml-2">chevron_right</span>
+</button>
+<button class="w-full h-14 border-2 border-primary text-primary rounded-xl font-headline-md text-headline-md flex items-center justify-center active:scale-95 transition-transform bg-transparent">
+                ನಂತರ ಮಾಡಿ (Skip for now)
+            </button>
+</div>
+<!-- Privacy Disclaimer -->
+<div class="mt-8 text-center px-4">
+<p class="font-body-md text-[12px] leading-relaxed text-on-surface-variant opacity-80">
+<span class="material-symbols-outlined text-[14px] align-middle mr-1">security</span>
+                ನಿಮ್ಮ ಡೇಟಾ ಸುರಕ್ಷಿತವಾಗಿದೆ. ನೋಂದಾಯಿಸುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ <a class="underline font-bold text-primary" href="#">ಗೌಪ್ಯತಾ ನೀತಿ</a> ಮತ್ತು <a class="underline font-bold text-primary" href="#">ನಿಯಮಗಳನ್ನು</a> ಒಪ್ಪುತ್ತೀರಿ.
+            </p>
+</div>
+</main>
+<!-- Illustrative Background Element (Subtle) -->
+<div class="fixed -bottom-20 -right-20 w-64 h-64 bg-secondary-container opacity-20 rounded-full blur-3xl -z-10"></div>
+<div class="fixed -top-20 -left-20 w-48 h-48 bg-primary-container opacity-10 rounded-full blur-3xl -z-10"></div>
+<!-- Image Placeholder for Illustration (Required by instructions) -->
+<div class="hidden">
+<img data-alt="A clean, minimalist 3D illustration featuring a professional first aid kit and a stylized smartphone displaying a heartbeat lifeline. The visual uses a high-contrast palette of deep emergency red, secondary safety green, and soft blue backgrounds. The lighting is bright and authoritative, reflecting a calm medical environment. This modern digital art style emphasizes safety, reliability, and immediate medical assistance for emergency situations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDuIHDGolnar6QHRFSsqK6geu6fcZBHUsrOw1aK_adgBCsa1vvHV5wp5xnTn5OnHkwRwCmpc536Zpfu-5AuaJQdQWdJ_Gt6yJcQuTtfbbBR0gUR-tYGm_ghfUxp3cm7f4D5iTL6TDZpBJ4XeVV-9qY_NL4z70JfFCQSVmsY6ZF35-qCRRSq7Yb9VtdbT8PMxjTsWSDqoRYgXZvNdJ_QoE6iRN9f2hn2GyNWyQhAWK5XNP4_Jh7pdXEtjJsPp6oRr24LptCpkuYBkwW"/>
+</div>
+</body></html>

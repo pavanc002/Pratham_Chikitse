@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#8e130c",
+                        "surface-variant": "#d7e4f3",
+                        "inverse-surface": "#26323d",
+                        "tertiary-container": "#965d00",
+                        "secondary-fixed-dim": "#61de8a",
+                        "secondary": "#006d37",
+                        "on-secondary-container": "#007239",
+                        "on-surface-variant": "#59413d",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#b02d21",
+                        "primary-fixed": "#ffdad5",
+                        "tertiary-fixed-dim": "#ffb961",
+                        "on-primary-container": "#ffe5e1",
+                        "surface-dim": "#cfdbea",
+                        "primary-fixed-dim": "#ffb4a9",
+                        "outline": "#8d706c",
+                        "primary-container": "#c0392b",
+                        "surface-bright": "#f7f9ff",
+                        "surface-container-high": "#dde9f9",
+                        "background": "#f7f9ff",
+                        "secondary-container": "#7bf8a1",
+                        "tertiary-fixed": "#ffddb9",
+                        "inverse-primary": "#ffb4a9",
+                        "on-tertiary-container": "#ffe7cf",
+                        "inverse-on-surface": "#e7f2ff",
+                        "error": "#ba1a1a",
+                        "primary": "#9e2016",
+                        "outline-variant": "#e1bfb9",
+                        "surface-container-low": "#ecf4ff",
+                        "on-background": "#111d27",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-surface": "#111d27",
+                        "on-secondary-fixed-variant": "#005228",
+                        "tertiary": "#754800",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d7e4f3",
+                        "surface": "#f7f9ff",
+                        "on-secondary-fixed": "#00210c",
+                        "secondary-fixed": "#7efba4",
+                        "surface-container": "#e3effe",
+                        "on-primary-fixed": "#410000",
+                        "on-tertiary-fixed-variant": "#663e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "tap-target-min": "48px",
+                        "tile-size": "80px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Roboto"],
+                        "headline-lg": ["Noto Sans Kannada"],
+                        "headline-md": ["Noto Sans Kannada"],
+                        "body-md": ["Noto Sans Kannada"],
+                        "body-lg": ["Noto Sans Kannada"],
+                        "emergency-num": ["Roboto"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                        "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9ff;
+        }
+        .scrolling-content {
+            padding-bottom: 120px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-surface sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile h-tap-target-min border-b-2 border-outline-variant">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-highest p-2 rounded-full transition-all">menu</button>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-highest p-2 rounded-full transition-all">account_circle</button>
+</header>
+<main class="px-margin-mobile py-8 scrolling-content max-w-2xl mx-auto">
+<!-- Profile Hero Section -->
+<div class="flex flex-col items-center mb-8">
+<div class="relative mb-4">
+<div class="w-32 h-32 rounded-full border-4 border-primary overflow-hidden bg-surface-container-high">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A professional studio portrait of a friendly middle-aged man with a kind smile, looking directly at the camera. The background is a clean, minimalist soft blue gradient that perfectly aligns with the UI color palette. The lighting is bright and high-key, emphasizing a safe and reliable health-oriented aesthetic. The style is sharp, clean, and modern photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5gbULXCslo-FmOXIfkFtRHu3P5k9iglIPlWhzz0U6bfLFQuUuuszEOAiovOR14i7ENOB5_GUoOaCsYiEF8JFLxURoWSuQqa7UxxUuIxaAt3r-60wH9bVesews7FDUP9JSn2cyK6P1ifPZFWmYk6y7lYRREmNN8e6xC5UC-EM56kVE760LUMjlm1G7GjhuPrJCFVTrm43s9-Z6HKpBHsQIEfdrhJqDqZn4hJAdToIzQVCk1fOOkqui74QE-w6Bf9xpSAFTyxIoBsWS"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-on-primary p-2 rounded-full shadow-lg border-2 border-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-background">ನನ್ನ ಪ್ರೊಫೈಲ್</h2>
+</div>
+<!-- Personal Information Section -->
+<div class="space-y-6">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant shadow-sm">
+<div class="flex items-center gap-2 mb-4 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary">person</span>
+<h3 class="font-body-lg text-body-lg text-primary">ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ</h3>
+</div>
+<div class="space-y-4">
+<!-- Full Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-1 ml-1">ಪೂರ್ಣ ಹೆಸರು</label>
+<input class="w-full h-tap-target-min px-4 rounded-lg border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-lowest transition-all" type="text" value="ರಾಜೇಶ್ ಕುಮಾರ್"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Age -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-1 ml-1">ವಯಸ್ಸು</label>
+<input class="w-full h-tap-target-min px-4 rounded-lg border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-lowest transition-all" type="number" value="34"/>
+</div>
+<!-- Blood Group -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-1 ml-1">ರಕ್ತದ ಗುಂಪು</label>
+<select class="w-full h-tap-target-min px-4 rounded-lg border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-lowest transition-all">
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option selected="">O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+</div>
+</div>
+<!-- Gender -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-4 ml-1">ಲಿಂಗ</label>
+<div class="flex gap-4">
+<label class="flex items-center gap-2 cursor-pointer p-3 border-2 border-primary bg-primary-container/10 rounded-lg flex-1 justify-center transition-all">
+<input checked="" class="w-6 h-6 text-primary border-primary focus:ring-0" name="gender" type="radio"/>
+<span class="font-body-md">ಪುರುಷ</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer p-3 border-2 border-outline-variant rounded-lg flex-1 justify-center transition-all hover:bg-surface-container-high">
+<input class="w-6 h-6 text-primary border-outline focus:ring-0" name="gender" type="radio"/>
+<span class="font-body-md">ಮಹಿಳೆ</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Emergency Contact Section -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant shadow-sm">
+<div class="flex items-center gap-2 mb-4 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary">emergency_share</span>
+<h3 class="font-body-lg text-body-lg text-primary">ತುರ್ತು ಸಂಪರ್ಕ</h3>
+</div>
+<div class="space-y-4">
+<!-- Contact Name -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-1 ml-1">ಸಂಪರ್ಕ ವ್ಯಕ್ತಿಯ ಹೆಸರು</label>
+<input class="w-full h-tap-target-min px-4 rounded-lg border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-lowest transition-all" type="text" value="ಸುನಿತಾ ಕುಮಾರ್"/>
+</div>
+<!-- Contact Phone -->
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface-variant mb-1 ml-1">ಫೋನ್ ಸಂಖ್ಯೆ</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-on-surface-variant">call</span>
+<input class="w-full h-tap-target-min pl-12 pr-4 rounded-lg border-2 border-outline-variant focus:border-primary focus:ring-0 bg-surface-container-lowest transition-all" type="tel" value="+91 98765 43210"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Update Button -->
+<button class="w-full h-tap-target-min bg-primary text-on-primary font-bold rounded-xl shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-2 mb-8">
+<span class="material-symbols-outlined">save</span>
+                ಪ್ರೊಫೈಲ್ ನವೀಕರಿಸಿ
+            </button>
+</div>
+</main>
+<!-- Pulsing Audio FAB (Contextual for assistance) -->
+<div class="fixed bottom-24 right-6 z-40">
+<button class="w-14 h-14 bg-secondary text-on-secondary rounded-full flex items-center justify-center shadow-xl ring-4 ring-secondary/20 animate-pulse transition-all active:scale-90">
+<span class="material-symbols-outlined text-3xl">volume_up</span>
+</button>
+</div>
+<!-- Persistent Call 108 Bar -->
+<div class="fixed bottom-20 left-0 w-full bg-primary-container z-50 h-14 flex items-center justify-center gap-4 text-on-primary cursor-pointer active:opacity-90">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-emergency-num text-emergency-num">CALL 108</span>
+<span class="font-body-md font-bold">(ತುರ್ತು ಕರೆ)</span>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-base pb-safe bg-surface border-t-2 border-outline-variant">
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-lg text-label-lg">ಮನೆ</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">medical_services</span>
+<span class="font-label-lg text-label-lg">ಆಸ್ಪತ್ರೆಗಳು</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-xl px-4 py-1 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-label-lg text-label-lg">ಸೆಟ್ಟಿಂಗ್ಸ್</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high rounded-xl cursor-pointer">
+<span class="material-symbols-outlined">emergency</span>
+<span class="font-label-lg text-label-lg">ಕರೆ 108</span>
+</div>
+</nav>
+</body></html>

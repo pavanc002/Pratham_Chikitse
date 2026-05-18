@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="kn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;700;900&amp;family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb961",
+                        "on-primary-fixed": "#410000",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#e7f2ff",
+                        "secondary-fixed-dim": "#61de8a",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb4a9",
+                        "surface": "#f7f9ff",
+                        "outline": "#8d706c",
+                        "on-tertiary-fixed": "#2b1700",
+                        "on-surface-variant": "#59413d",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#754800",
+                        "surface-container-high": "#dde9f9",
+                        "tertiary-fixed": "#ffddb9",
+                        "surface-container-low": "#ecf4ff",
+                        "on-primary-container": "#ffe5e1",
+                        "primary-container": "#c0392b",
+                        "surface-dim": "#cfdbea",
+                        "surface-container-highest": "#d7e4f3",
+                        "on-surface": "#111d27",
+                        "surface-bright": "#f7f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#b02d21",
+                        "on-secondary-container": "#007239",
+                        "background": "#f7f9ff",
+                        "on-primary-fixed-variant": "#8e130c",
+                        "secondary-fixed": "#7efba4",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005228",
+                        "on-error-container": "#93000a",
+                        "primary": "#9e2016",
+                        "inverse-primary": "#ffb4a9",
+                        "secondary-container": "#7bf8a1",
+                        "on-secondary-fixed": "#00210c",
+                        "on-tertiary-fixed-variant": "#663e00",
+                        "primary-fixed": "#ffdad5",
+                        "surface-container": "#e3effe",
+                        "outline-variant": "#e1bfb9",
+                        "on-primary": "#ffffff",
+                        "on-background": "#111d27",
+                        "on-tertiary-container": "#ffe7cf",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#965d00",
+                        "inverse-surface": "#26323d",
+                        "secondary": "#006d37",
+                        "surface-variant": "#d7e4f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "tap-target-min": "48px",
+                        "base": "8px",
+                        "tile-size": "80px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Sans Kannada"],
+                        "body-lg": ["Noto Sans Kannada"],
+                        "body-md": ["Noto Sans Kannada"],
+                        "label-lg": ["Roboto"],
+                        "emergency-num": ["Roboto"],
+                        "headline-lg": ["Noto Sans Kannada"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "26px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "700"}],
+                        "emergency-num": ["32px", {"lineHeight": "40px", "fontWeight": "900"}],
+                        "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pulse-glow {
+            box-shadow: 0 0 0 0 rgba(0, 109, 55, 0.7);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 109, 55, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(0, 109, 55, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 109, 55, 0); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container">
+<!-- Top App Bar -->
+<header class="bg-surface dark:bg-surface-dim border-b-2 border-outline-variant fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile h-tap-target-min">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform hover:bg-surface-variant p-2 rounded-full">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim font-bold">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="pt-20 pb-40 px-margin-mobile max-w-2xl mx-auto">
+<!-- Breadcrumb / Step Indicator -->
+<div class="flex justify-between items-center mb-6">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full font-bold text-label-lg">STEP 1/5</span>
+<h2 class="font-headline-md text-headline-md text-primary">Eye Injury (ಕಣ್ಣಿನ ಗಾಯ)</h2>
+</div>
+<!-- Instructional Hero Card -->
+<section class="mb-8 overflow-hidden rounded-xl border-2 border-primary">
+<img class="w-full h-48 object-cover" data-alt="A detailed, clean medical illustration showing a pair of human eyes with one eye being gently flushed with a stream of clear running water. The lighting is bright and clinical, emphasizing safety and immediate care. The color palette is high-contrast with sterile whites, deep medical blues, and a touch of urgent red to signal a health emergency context. The overall style is professional, calm, and authoritative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8jt_uWCeyns0qeJBq5YJJMZenxGawsD6fBiJGdMkFWNFn7NNEXDoZOPrelWC7guuu1IEU2xf10tXeuGT8fqB-J5CNXcX72t-ykJFlRw30zun1q3AIqRyUPdKFbfMefjCnVbhi08Y0zHhLifG2RdekLfJXu3MXWcmKjSIJTuBCslK3aR7SroOxwMO-hk34IuMT11CoVTsjG-aM4707xpvvYTYi5TUUgCjo6N5aQ7hlJHwYAiI_mmTSzRwNSmlyugll3K-awnxzQTen"/>
+<div class="p-6 bg-surface-container-lowest">
+<h3 class="font-headline-md text-headline-md mb-2">Immediate Response (ತಕ್ಷಣದ ಕ್ರಮ)</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Identify the type of injury and act fast. Stay calm to reduce patient panic.</p>
+</div>
+</section>
+<!-- Bento Grid for DOs and DON'Ts -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- DOs Section -->
+<div class="bg-secondary-container p-6 rounded-xl border-2 border-secondary">
+<div class="flex items-center gap-2 mb-4 text-on-secondary-container">
+<span class="material-symbols-outlined font-bold" data-icon="check_circle">check_circle</span>
+<h4 class="font-headline-md text-headline-md">DOs (ಮಾಡಿ)</h4>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="text-secondary font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Flush for 15-20 min</strong>
+<span class="text-on-surface-variant">Use clean running water for chemical splashes.</span>
+<p class="text-secondary font-bold text-sm">15-20 ನಿಮಿಷ ನೀರಿನಿಂದ ತೊಳೆರಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Keep Eye Open</strong>
+<span class="text-on-surface-variant">Gently hold lid open while washing.</span>
+<p class="text-secondary font-bold text-sm">ತೊಳೆಯುವಾಗ ಕಣ್ಣನ್ನು ತೆರೆದಿಡಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Loose Padding</strong>
+<span class="text-on-surface-variant">Cover with a clean, loose pad.</span>
+<p class="text-secondary font-bold text-sm">ಕಣ್ಣನ್ನು ಮೃದುವಾದ ಬಟ್ಟೆಯಿಂದ ಮುಚ್ಚಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-secondary font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Embedded Objects</strong>
+<span class="text-on-surface-variant">Cover both eyes to prevent movement.</span>
+<p class="text-secondary font-bold text-sm">ವಸ್ತು ಚುಚ್ಚಿದ್ದರೆ ಎರಡು ಕಣ್ಣುಗಳನ್ನು ಮುಚ್ಚಿ.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- DON'Ts Section -->
+<div class="bg-error-container p-6 rounded-xl border-2 border-error">
+<div class="flex items-center gap-2 mb-4 text-on-error-container">
+<span class="material-symbols-outlined font-bold" data-icon="cancel">cancel</span>
+<h4 class="font-headline-md text-headline-md">DON'Ts (ಮಾಡಬೇಡಿ)</h4>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3">
+<span class="text-error font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Don't Rub</strong>
+<span class="text-on-surface-variant">Rubbing can cause deeper scratching.</span>
+<p class="text-error font-bold text-sm">ಕಣ್ಣನ್ನು ಉಜ್ಜಬೇಡಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-error font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">Don't Remove Objects</strong>
+<span class="text-on-surface-variant">Never pull out embedded objects.</span>
+<p class="text-error font-bold text-sm">ಚುಚ್ಚಿರುವ ವಸ್ತುವನ್ನು ತೆಗೆಯಬೇಡಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-error font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">No Eye Drops</strong>
+<span class="text-on-surface-variant">Avoid unprescribed medication.</span>
+<p class="text-error font-bold text-sm">ಐ ಡ್ರಾಪ್ಸ್ ಬಳಸಬೇಡಿ.</p>
+</div>
+</li>
+<li class="flex gap-3">
+<span class="text-error font-bold">•</span>
+<div class="font-body-md">
+<strong class="block">No Tight Patches</strong>
+<span class="text-on-surface-variant">Increases internal eye pressure.</span>
+<p class="text-error font-bold text-sm">ಗಟ್ಟಿಯಾಗಿ ಕಟ್ಟಬೇಡಿ.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Next Action Button -->
+<button class="w-full h-tap-target-min mt-8 bg-primary text-on-primary rounded-xl font-headline-md active:scale-95 transition-transform flex items-center justify-center gap-2">
+            NEXT STEP (ಮುಂದಿನ ಹಂತ)
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</main>
+<!-- Pulsing Audio FAB -->
+<button class="fixed bottom-24 right-6 w-16 h-16 bg-secondary text-on-secondary rounded-full pulse-glow flex items-center justify-center z-40">
+<span class="material-symbols-outlined text-[32px]" data-icon="volume_up">volume_up</span>
+</button>
+<!-- Persistent Call 108 Bar -->
+<div class="fixed bottom-[64px] left-0 w-full z-50">
+<a class="bg-primary-container text-on-primary-container h-16 w-full flex items-center justify-center gap-4 active:bg-primary transition-colors border-t-2 border-primary" href="tel:108">
+<span class="material-symbols-outlined text-[32px] font-bold" data-icon="emergency">emergency</span>
+<span class="font-emergency-num text-emergency-num">CALL 108 (ಕರೆ ಮಾಡಿ)</span>
+</a>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe bg-surface-container dark:bg-surface-container-highest border-t-4 border-primary shadow-lg z-50">
+<button class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-lg p-2 transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-lg text-label-lg">ಮುಖಪುಟ</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-label-lg text-label-lg">ಆಸ್ಪತ್ರೆಗಳು</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all">
+<span class="material-symbols-outlined" data-icon="emergency">emergency</span>
+<span class="font-label-lg text-label-lg">ಸಹಾಯ</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-variant transition-all">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-lg text-label-lg">ಸೆಟ್ಟಿಂಗ್ಸ್</span>
+</button>
+</nav>
+</body></html>
